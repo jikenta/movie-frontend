@@ -63,4 +63,30 @@ const styles = {
     gap: '20px',
   },
   card: {
-    ba
+    backgroundColor: '#222',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    padding: '20px',
+    transition: 'transform 0.2s',
+  },
+  image: {
+    width: '100%',
+    borderRadius: '8px',
+  },
+  title: {
+    fontSize: '1.3rem',
+    margin: '15px 0 10px',
+  },
+  snippet: {
+    fontSize: '0.9rem',
+    color: '#ccc',
+  },
+  link: {
+    display: 'inline-block',
+    marginTop: '10px',
+    color: '#1db954',
+    textDecoration: 'none',
+  }
+};
+
+export default Blog;

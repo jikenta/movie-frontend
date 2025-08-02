@@ -1,34 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
 function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-  const fakePosts = [
-    {
-      _id: '1',
-      title: 'Top 10 Movies to Watch This Month',
-      image: 'https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg',
-      snippet: 'Check out our hand-picked list of must-watch movies this month...',
-    },
-    {
-      _id: '2',
-      title: 'Behind the Scenes: Making of Dune',
-      image: 'https://image.tmdb.org/t/p/w500/3slB8htT3oQkc3jIbjBAm6Q5nWw.jpg',
-      snippet: 'An exclusive look into the making of the sci-fi epic...',
-    },
-    {
-      _id: '3',
-      title: 'Why Indie Films Are Thriving',
-      image: 'https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg',
-      snippet: 'From streaming platforms to film festivals, indie movies are booming...',
-    }
-  ];
+    const fakePosts = [
+      {
+        _id: '1',
+        title: 'Top 10 Movies to Watch This Month',
+        image: 'https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg',
+        snippet: 'Check out our hand-picked list of must-watch movies this month...',
+      },
+      {
+        _id: '2',
+        title: 'Behind the Scenes: Making of Dune',
+        image: 'https://image.tmdb.org/t/p/w500/3slB8htT3oQkc3jIbjBAm6Q5nWw.jpg',
+        snippet: 'An exclusive look into the making of the sci-fi epic...',
+      },
+      {
+        _id: '3',
+        title: 'Why Indie Films Are Thriving',
+        image: 'https://image.tmdb.org/t/p/w500/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg',
+        snippet: 'From streaming platforms to film festivals, indie movies are booming...',
+      }
+    ];
 
-  setPosts(fakePosts);
-}, []);
-
+    setPosts(fakePosts);
+  }, []);
 
   return (
     <div style={styles.container}>
@@ -65,30 +63,4 @@ const styles = {
     gap: '20px',
   },
   card: {
-    backgroundColor: '#222',
-    borderRadius: '10px',
-    overflow: 'hidden',
-    padding: '20px',
-    transition: 'transform 0.2s',
-  },
-  image: {
-    width: '100%',
-    borderRadius: '8px',
-  },
-  title: {
-    fontSize: '1.3rem',
-    margin: '15px 0 10px',
-  },
-  snippet: {
-    fontSize: '0.9rem',
-    color: '#ccc',
-  },
-  link: {
-    display: 'inline-block',
-    marginTop: '10px',
-    color: '#1db954',
-    textDecoration: 'none',
-  }
-};
-
-export default Blog;
+    ba
